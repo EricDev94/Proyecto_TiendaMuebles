@@ -1,0 +1,461 @@
+/*CSS de elementos */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2rem;
+    
+
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 2rem 0;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+ 
+    
+}
+
+h1 span {
+    color: #1A7CCE;
+}
+
+
+
+.contenido h2,
+h2 {
+
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+
+}
+
+h2 span {
+    
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out ;
+    text-align: center;
+    border: none;
+    width: 100%;
+    margin: 1rem;
+    text-decoration: none;
+    
+    
+}
+.btn:hover {
+    background-color: #769c02;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+    .btn {
+        width: auto;
+    }
+}
+
+ul {
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/* CSS de clases */
+
+
+/*Header*/
+
+.Titulo{
+
+    
+    padding: 30px;
+}
+
+.Titulo h1{
+
+    font-size: 55px;
+}
+
+.navegador{
+    border-top: .1rem solid #e1e1e1;
+    padding: 0.5rem 0;
+    
+
+}
+
+.nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.navegador a{
+
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    
+
+}
+
+.navegador a:hover {
+    background-color: #0082ce;
+    color: #FFFFFF;
+    border-radius: 1rem;
+
+}
+
+.portada {
+
+    background-image: url(../img/Imagenes\ Ecommerce/principal.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 550px;
+    background-position: center center;
+    padding-top: 10px;
+
+}
+
+
+/*Categoria Productos*/
+
+
+
+.listado-categorias{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    margin: 0 auto;
+    
+
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    
+    
+}
+
+.categorias {
+    padding: 5rem 0;
+}
+.categoria {
+    margin-bottom: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.categoria img {
+    width: 100%;
+}
+
+.categoria a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    color: #FFFFFF;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+
+/* Sobre Nosotros */
+
+.sobre-nosotros {
+
+    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100%),
+    url(../img/Imagenes\ Ecommerce/nosotros.jpg);    
+    padding: 10rem 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    
+
+}
+
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24rem;
+
+}
+
+.texto-nosotros{
+    grid-column: 2 / 3;
+    column-gap: 20rem;
+    color: white;
+
+}
+
+.titulo-nosotros{
+    text-align: left;
+
+}
+
+/* Productos */
+
+.contenido-principal{
+    padding-top: 5rem;
+    
+}
+
+.listado-productos{
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+
+.producto{
+    background-color:#037bc0 ;
+
+}
+
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(1) img {
+
+    height: 43rem;
+    width: 100%;
+    object-fit:cover;
+
+}
+
+
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.texto-producto{
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.texto-producto button{
+    background-color: yellowgreen;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 113rem;
+}
+
+.texto-producto .precio{
+    font-size: 2.8rem;
+}
+
+/** Footer **/
+.site-footer {
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+.site-footer h3 {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+@media (min-width: 768px) { 
+    .site-footer h3 {
+        text-align: left;
+    }
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.grid-footer > div {
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) { 
+    .grid-footer > div {
+        margin: 0;
+    }
+}
+
+
+.footer-menu a {
+    display: block;
+    text-align: center;
+}
+@media (min-width: 768px) { 
+    .footer-menu a {
+        text-align: left;
+    }
+}
+
+.copyright {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+
+
+/*CSS Sobre nosotros*/
+
+
+.nosotros{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+}
+
+
+/*CSS Blog */
+
+.entrada h2{
+    text-align: left;
+    font-size: 4rem;
+}
+
+#entrada{
+    border-bottom: 2px solid #e1e1e1;
+    padding: 4rem;
+}
+
+.entrada{
+   
+    padding: 4rem;
+}
+
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+    
+}
+
+.entrada-meta{
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+/* CSS galeria */
+
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+
+/* Formulario */
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+   border: 1px solid black;
+   margin-bottom: 2rem;
+}
+.formulario legend {
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    font-size: 15px;
+}
+.campo label {
+    flex-basis: 10rem;
+} 
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select  {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+
